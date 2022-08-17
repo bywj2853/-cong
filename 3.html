@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>音乐</title>
+  </head>
+  <body background="74015558_p0.png">
+    <div style="text-align: center; margin: 15px">
+      <img src="主子.png" width="250" height="250" />
+      <p style="color: #18e5e5">来听听吧~</p>
+    </div>
+    <div style="text-align: center">
+      <div id="audioBox">
+        <script type="text/javascript">
+          window.onload = function () {
+            var arr = [
+              "阿知波大輔 - 陽だまりのピアチェーレ.mp3",
+              "柳川和樹 - Forest Dance.mp3",
+              "柳川和樹 - いつかの隙間で.mp3",
+            ]; //把需要播放的歌曲从后往前排，这里已添加两首音乐，可继续添加多个音乐
+            var myAudio = new Audio();
+            myAudio.preload = true;
+            myAudio.controls = true;
+            myAudio.src = arr.pop(); //每次读数组最后一个元素
+            myAudio.addEventListener("ended", playEndedHandler, false);
+            myAudio.play();
+            document.getElementById("audioBox").appendChild(myAudio);
+            myAudio.loop = false; //禁止循环，否则无法触发ended事件
+            function playEndedHandler() {
+              myAudio.src = arr.pop();
+              myAudio.play();
+              console.log(arr.length);
+              !arr.length &&
+                myAudio.removeEventListener("ended", playEndedHandler, false); //只有一个元素时解除绑定
+            }
+          };
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
