@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>音乐</title>
+    <title>学习</title>
     <style>
       a {
         text-decoration: none;
@@ -22,53 +22,26 @@
       }
     </style>
   </head>
-  <body background="74015558_p0.png">
-    <div style="text-align: center; margin: 15px">
-      <img src="主子.png" width="250" height="250" />
-      <p style="color: #18e5e5">来听听吧~</p>
+  <body background="Grade Grey.jpg">
+    <div style="text-align: center; margin: 20px; padding: 10px">
+      <p style="text-align: center">
+        <img src="快去写几道导数,苟修金.jpg" width="280" height="350" />
+      </p>
+      <h2>哦呀?是好孩纸呢(笑</h2>
     </div>
     <div style="text-align: center">
-      <div id="audioBox">
-        <audio autoplay="autoplay">
-          <script type="text/javascript">
-            window.onload = function () {
-              var arr = [
-                "阿知波大輔 - 陽だまりのピアチェーレ.mp3",
-                "柳川和樹 - Forest Dance.mp3",
-                "柳川和樹 - いつかの隙間で.mp3",
-                "柳川和樹 - 彼方.mp3",
-                "柳川和樹 - Forest Dance.mp3",
-                "浅野隼人 - 船の上の錬金術師.mp3",
-                "松村佑樹 - 海風を背に受けて.mp3",
-                "Floating Cloud - 風穴カーニバル.mp3",
-                "松村佑樹 - 海風を背に受けて.mp3",
-              ]; //把需要播放的歌曲从后往前排，这里已添加两首音乐，可继续添加多个音乐
-              var myAudio = new Audio();
-              myAudio.preload = true;
-              myAudio.controls = true;
-              myAudio.src = arr.pop(); //每次读数组最后一个元素
-              myAudio.addEventListener("ended", playEndedHandler, false);
-              myAudio.play();
-              document.getElementById("audioBox").appendChild(myAudio);
-              myAudio.loop = false; //禁止循环，否则无法触发ended事件
-              function playEndedHandler() {
-                myAudio.src = arr.pop();
-                myAudio.play();
-                console.log(arr.length);
-                !arr.length &&
-                  myAudio.removeEventListener("ended", playEndedHandler, false); //只有一个元素时解除绑定
-              }
-            };
-          </script>
-        </audio>
-      </div>
+      <p>虽然说这是个学习界面</p>
+      <p>但不用担心,就算我给你写学习相关的你也大概率不会看吧(bushi</p>
+      <p>老实说这个页面我也不知道写什么,暂时当中间门吧</p>
     </div>
-    <div style="text-align: center">
-      <h1>
-        <button class="button" style="vertical-align: middle">
-          <a href="https://bywj2853.github.io/coyu-jiaoshi/2.html">回主页?</a>
-        </button>
-      </h1>
+    <div style="text-align: center; margin: 10px">
+      <button class="button" style="vertical-align: middle">
+        <a href="https://bywj2853.github.io/coyu-jiaoshi/2.html">回主页?</a>
+      </button>
+      <br />
+      <button class="button" style="vertical-align: middle">
+        <a href="/new.html">来瞅瞅?这是咱的博客(</a>
+      </button>
     </div>
   </body>
 </html>
