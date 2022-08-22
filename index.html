@@ -5,46 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>主页</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      .daohang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(201, 201, 201);
+        font-size: 15px;
+        color: rgb(153, 158, 161);
+      }
+      .baise {
+        background-color: rgb(255, 255, 255);
+      }
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    </style>
   </head>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background-color: #eee;
-    }
-    .daohang {
-      padding: 10px 20px;
-      border-bottom: 1px solid rgb(201, 201, 201);
-      font-size: 15px;
-      color: rgb(153, 158, 161);
-    }
-    .yinying {
-    }
-    .baise {
-      background-color: rgb(255, 255, 255);
-    }
-    .flex {
-      display: flex;
-    }
-    .flex1 {
-      flex: 1;
-    }
-    .column {
-      flex-direction: column;
-    }
-    .mg8 {
-      margin: 8px;
-    }
-    .mgr8 {
-      margin-right: 8px;
-    }
-    .mgt8 {
-      margin-top: 8px;
-    }
-    a:hover {
-      text-decoration: none;
-    }
-  </style>
   <body class="flex" background="Zinc.jpg">
     <!--侧边栏-->
     <div style="width: 200px; z-index: index 2" class="baise">
@@ -91,16 +89,8 @@
       <div style="overflow: auto" class="flex1 flex">
         <!--左区-->
         <div style="flex: 3" class="flex column mg8">
-          <!--待定区域-->
-          <div style="text-align: center" class="flex">
-            <!--待定区域块-->
-            <div style="height: 100px" class="flex1 baise mgr8">待定区域</div>
-            <div style="height: 100px" class="flex1 baise mgr8">待定区域</div>
-            <div style="height: 100px" class="flex1 baise mgr8">待定区域</div>
-            <div style="height: 100px" class="flex1 baise mgr8">待定区域</div>
-          </div>
           <!--信息区-->
-          <div class="flex column">
+          <div style="text-align: center" class="flex column">
             <!--信息项-->
             <div style="height: 160px" class="flex column baise mgt8">
               待定区域
@@ -112,13 +102,6 @@
               待定区域
             </div>
           </div>
-        </div>
-        <!--右区-->
-        <div style="flex: 1" class="flex column mgr8 mgt8">
-          <!--待定区域-->
-          <div style="height: 150px" class="baise">待定区域</div>
-          <!--待定区域-->
-          <div style="height: 300px" class="baise mgt8">待定区域</div>
         </div>
       </div>
     </div>
