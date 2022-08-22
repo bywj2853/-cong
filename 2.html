@@ -6,69 +6,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>音乐</title>
     <style>
-      a {
-        text-decoration: none;
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
       }
-      a:hover {
-        text-decoration: none;
-        color: #ff6699;
+      .baise {
+        background-color: rgb(255, 255, 255);
       }
-      .button {
-        cursor: pointer;
-        border-radius: 4px;
-        border: nono;
-        background-color: #b3eaff;
-        font-size: 25px;
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .qufeng {
+        border-bottom: 1px solid black;
       }
     </style>
   </head>
-  <body background="74015558_p0.png">
-    <div style="text-align: center; margin: 15px">
-      <img src="主子.png" width="250" height="250" />
-      <p style="color: #18e5e5">来听听吧~</p>
-    </div>
-    <div style="text-align: center">
-      <div id="audioBox">
-        <audio autoplay="autoplay">
-          <script type="text/javascript">
-            window.onload = function () {
-              var arr = [
-                "阿知波大輔 - 陽だまりのピアチェーレ.mp3",
-                "柳川和樹 - Forest Dance.mp3",
-                "柳川和樹 - いつかの隙間で.mp3",
-                "柳川和樹 - 彼方.mp3",
-                "柳川和樹 - Forest Dance.mp3",
-                "浅野隼人 - 船の上の錬金術師.mp3",
-                "松村佑樹 - 海風を背に受けて.mp3",
-                "Floating Cloud - 風穴カーニバル.mp3",
-                "松村佑樹 - 海風を背に受けて.mp3",
-              ]; //把需要播放的歌曲从后往前排，这里已添加两首音乐，可继续添加多个音乐
-              var myAudio = new Audio();
-              myAudio.preload = true;
-              myAudio.controls = true;
-              myAudio.src = arr.pop(); //每次读数组最后一个元素
-              myAudio.addEventListener("ended", playEndedHandler, false);
-              myAudio.play();
-              document.getElementById("audioBox").appendChild(myAudio);
-              myAudio.loop = false; //禁止循环，否则无法触发ended事件
-              function playEndedHandler() {
-                myAudio.src = arr.pop();
-                myAudio.play();
-                console.log(arr.length);
-                !arr.length &&
-                  myAudio.removeEventListener("ended", playEndedHandler, false); //只有一个元素时解除绑定
-              }
-            };
-          </script>
-        </audio>
+  <body class="flex">
+    <!--主区域-->
+    <div class="flex flex1 column mg8">
+      <!--头部栏-->
+      <div
+        style="text-align: center; height: 60px; z-index: 1px"
+        class="mg8 baise"
+      >
+        <h1>当前界面的音乐较为混乱,建议导航)</h1>
       </div>
-    </div>
-    <div style="text-align: center">
-      <h1>
-        <button class="button" style="vertical-align: middle">
-          <a href="https://bywj2853.github.io/coyu-jiaoshi/">回主页?</a>
-        </button>
-      </h1>
+      <!--内容区-->
+      <div style="overflow: auto" class="flex1 flex">
+        <!--左区-->
+        <div style="flex: 3" class="baise">
+          <!--播放器-->
+          <div style="text-align: center" class="mgr8">
+            <img src="主子.png" width="250" height="250" />
+            <p>来听听吧</p>
+            <div>
+              <div style="text-align: center">
+                <div id="audioBox">
+                  <audio autoplay="autoplay">
+                    <script type="text/javascript">
+                      window.onload = function () {
+                        var arr = [
+                          "阿知波大輔 - 陽だまりのピアチェーレ.mp3",
+                          "柳川和樹 - Forest Dance.mp3",
+                          "柳川和樹 - いつかの隙間で.mp3",
+                          "柳川和樹 - 彼方.mp3",
+                          "柳川和樹 - Forest Dance.mp3",
+                          "浅野隼人 - 船の上の錬金術師.mp3",
+                          "松村佑樹 - 海風を背に受けて.mp3",
+                          "Floating Cloud - 風穴カーニバル.mp3",
+                          "松村佑樹 - 海風を背に受けて.mp3",
+                        ]; //把需要播放的歌曲从后往前排，这里已添加两首音乐，可继续添加多个音乐
+                        var myAudio = new Audio();
+                        myAudio.preload = true;
+                        myAudio.controls = true;
+                        myAudio.src = arr.pop(); //每次读数组最后一个元素
+                        myAudio.addEventListener(
+                          "ended",
+                          playEndedHandler,
+                          false
+                        );
+                        myAudio.play();
+                        document
+                          .getElementById("audioBox")
+                          .appendChild(myAudio);
+                        myAudio.loop = false; //禁止循环，否则无法触发ended事件
+                        function playEndedHandler() {
+                          myAudio.src = arr.pop();
+                          myAudio.play();
+                          console.log(arr.length);
+                          !arr.length &&
+                            myAudio.removeEventListener(
+                              "ended",
+                              playEndedHandler,
+                              false
+                            ); //只有一个元素时解除绑定
+                        }
+                      };
+                    </script>
+                  </audio>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="text-align: center">
+            <a
+              style="color: #ff6699"
+              href="https://bywj2853.github.io/coyu-jiaoshi/"
+              >回主页?</a
+            >
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 2" class="mg8 baise">
+          <!--小盒子 9-->
+          <div style="text-align: center">
+            <div style="height: 100px; flex: 1 flex" class="qufeng baise">
+              导航:日系奇幻
+            </div>
+            <div style="height: 100px; flex: 1 flex" class="qufeng baise">
+              导航:国风
+            </div>
+            <div style="height: 100px; flex: 1 flex" class="qufeng baise">
+              导航:?
+            </div>
+            <div style="height: 100px; flex: 1 flex" class="qufeng baise">
+              导航:?
+            </div>
+            <div style="height: 100px; flex: 1 flex" class="qufeng baise">
+              导航:?
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
