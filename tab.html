@@ -34,11 +34,36 @@
         border-bottom-style: solid;
         border-color: #b3eaff;
       }
+      #search {
+        width: 78px;
+
+        height: 32px;
+
+        float: right;
+
+        background: black;
+
+        color: white;
+
+        text-align: center;
+
+        line-height: 32px;
+
+        cursor: pointer;
+      }
     </style>
+    <script>
+      function search() {
+        let search = document.getElementById("shurukuang");
+        window.open("https://cn.bing.com/search?q=" + search.value);
+      }
+    </script>
   </head>
   <body>
     <div style="text-align: center; vertical-align: center" id="box">
       <input type="text" placeholder="搜索/记事" id="shurukuang" />
+      <div onclick="search()" id="search">搜索</div>
     </div>
   </body>
 </html>
+
