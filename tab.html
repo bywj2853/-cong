@@ -51,12 +51,6 @@
         position: relative;
       }
     </style>
-    <script>
-      function search() {
-        let search = document.getElementById("shurukuang");
-        window.open("https://cn.bing.com/search?q=" + search.value);
-      }
-    </script>
   </head>
   <body>
     <div
@@ -64,8 +58,25 @@
       class="father"
       id="box"
     >
-      <input type="text" placeholder="搜索" id="shurukuang" />
+      <input
+        type="text"
+        placeholder="搜索"
+        id="shurukuang"
+        onkeydown="entersearch()"
+      />
       <button onclick="search()" id="search">搜索</button>
     </div>
+    <script>
+      function search() {
+        let search = document.getElementById("shurukuang");
+        window.open("https://cn.bing.com/search?q=" + search.value);
+      }
+      function entersearch() {
+        var event = window.event || arguments.callee.caller.arguments[0];
+        if (event.keyCode == 13) {
+          search();
+        }
+      }
+    </script>
   </body>
 </html>
