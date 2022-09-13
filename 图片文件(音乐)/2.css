@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #eee;
+}
+.baise {
+  background-color: rgb(255, 255, 255);
+}
+.flex {
+  display: flex;
+}
+.flex1 {
+  flex: 1;
+}
+.column {
+  flex-direction: column;
+}
+.mg8 {
+  margin: 8px;
+}
+.mgr8 {
+  margin-right: 8px;
+}
+.mgl8 {
+  margin-left: 8px;
+}
+.mgt8 {
+  margin-top: 8px;
+}
+.qufeng {
+  border-bottom: 1px solid rgb(102, 102, 102);
+}
+
+/*媒体查询*/
+@media (max-width: 600px) {
+  .body {
+    margin: 8px;
+  }
+
+  .neirong {
+    flex-direction: column;
+  }
+
+  .zuoqu {
+    height: 250px;
+  }
+
+  .zhuzitu {
+    width: 150px;
+    height: 150px;
+  }
+
+  .youqu {
+    flex-direction: column;
+    margin-top: 8px;
+  }
+
+  .background-1 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .background-2 {
+    display: none;
+  }
+}
