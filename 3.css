@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #eee;
+}
+.daohang {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgb(201, 201, 201);
+  font-size: 15px;
+  color: rgb(153, 158, 161);
+}
+.baise {
+  background-color: rgb(255, 255, 255);
+}
+.flex {
+  display: flex;
+}
+.flex1 {
+  flex: 1;
+}
+.column {
+  flex-direction: column;
+}
+.mg8 {
+  margin: 8px;
+}
+.mgr8 {
+  margin-right: 8px;
+}
+.mgt8 {
+  margin-top: 8px;
+}
+a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .body {
+    margin: 8px;
+  }
+  .neirong {
+    flex-direction: column;
+  }
+  .xuexi-1 {
+    font-size: 5px;
+  }
+  .xuexi-2 {
+    font-size: 5px;
+  }
+  .xuexi-3 {
+    font-size: 5px;
+  }
+  .xuexi-4 {
+    font-size: 5px;
+  }
+  .xingxi {
+    flex-direction: column;
+  }
+}
