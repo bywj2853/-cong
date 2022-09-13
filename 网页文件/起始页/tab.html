@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Put your description here." />
+    <title>枫茶主子起始页</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        height: 100vh;
+        background-image: url("枫茶主子.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      #box {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+      }
+      #shurukuang {
+        text-align: center;
+        border: none;
+        outline: none;
+        background: none;
+        border-bottom: #b3eaff solid 1px;
+        width: 400px;
+        height: 25px;
+        font-size: 25px;
+        backdrop-filter: blur(10px);
+      }
+      #search {
+        width: 70px;
+        height: 30px;
+        background: none;
+        color: white;
+        text-align: center;
+        border-radius: 60px;
+        border: none;
+        position: absolute;
+        right: 40px;
+        cursor: pointer;
+      }
+      .father {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="text-align: center; vertical-align: center"
+      class="father"
+      id="box"
+    >
+      <input
+        type="text"
+        placeholder="搜索"
+        id="shurukuang"
+        onkeydown="entersearch()"
+      />
+      <button onclick="search()" id="search">搜索</button>
+    </div>
+    <script>
+      function search() {
+        let search = document.getElementById("shurukuang");
+        window.open("https://cn.bing.com/search?q=" + search.value);
+      }
+      function entersearch() {
+        var event = window.event || arguments.callee.caller.arguments[0];
+        if (event.keyCode == 13) {
+          search();
+        }
+      }
+    </script>
+  </body>
+</html>
