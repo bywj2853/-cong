@@ -1,59 +1,92 @@
 body {
   margin: 0;
   height: 100vh;
-  background-color: #eee;
+  background-color: #b3efff;
 }
-.daohang {
-  padding: 10px 20px;
-  border-bottom: 1px solid rgb(201, 201, 201);
-  font-size: 15px;
-  color: rgb(153, 158, 161);
-}
-.baise {
-  background-color: rgb(255, 255, 255);
-}
+
 .flex {
   display: flex;
 }
+
 .flex1 {
   flex: 1;
 }
+
 .column {
   flex-direction: column;
 }
-.mg8 {
-  margin: 8px;
+
+/*头部栏样式*/
+
+.toubu {
+  height: 60px;
+  z-index: 1;
 }
-.mgr8 {
-  margin-right: 8px;
+
+.text-image {
+  padding: 10px;
+  align-items: center;
+  justify-content: start;
 }
-.mgt8 {
-  margin-top: 8px;
+
+.text {
+  margin-left: 8px;
 }
+
+/*菜单样式*/
+
+.menu {
+  justify-content: center;
+  align-items: center;
+}
+
+/*学习*/
+
+.xuexi {
+  justify-content: center;
+  align-items: center;
+}
+
+.xuexikuai {
+  width: 750px;
+  height: 220px;
+}
+
+.title {
+  height: 50px;
+}
+
+.xuexi-text {
+  height: 90px;
+}
+
+/*美化*/
+
+.mg10 {
+  margin: 10px;
+}
+
+.mgt10 {
+  margin: 10px;
+}
+
+.baise {
+  background-color: rgb(255, 255, 255);
+}
+
+.heise {
+  background-color: black;
+}
+
+.langse {
+  background-color: #b3efff;
+}
+
 a:hover {
   text-decoration: none;
 }
 
+/*媒体查询*/
+
 @media (max-width: 600px) {
-  .body {
-    margin: 8px;
-  }
-  .neirong {
-    flex-direction: column;
-  }
-  .xuexi-1 {
-    font-size: 5px;
-  }
-  .xuexi-2 {
-    font-size: 5px;
-  }
-  .xuexi-3 {
-    font-size: 5px;
-  }
-  .xuexi-4 {
-    font-size: 5px;
-  }
-  .xingxi {
-    flex-direction: column;
-  }
 }
