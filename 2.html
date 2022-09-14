@@ -7,69 +7,41 @@
     <link rel="stylesheet" href="./图片文件(音乐)/2.css" />
     <title>音乐</title>
   </head>
-  <body class="flex">
-    <!--主区域-->
-    <div class="flex flex1 column mg8">
-      <!--头部栏-->
-      <div height: 60px;
-        class="mg8 baise"
-      >
-        <img src="./图片文件(音乐)/Q主子.jpg" width="65" height="60"/>
+  <body>
+    <div class="container">
+      <!--导航栏-->
+      <div class="navbar">
+        <ul>
+          <li>
+            <a herf="https://bywj2853.github.io/coyu-jiaoshi/">home</a>
+          </li>
+          <li>
+            <a href="https://bywj2853.github.io/coyu-jiaoshi/2.html">music</a>
+          </li>
+          <li>
+            <a herf="https://bywj2853.github.io/coyu-jiaoshi/3.html">book</a>
+          </li>
+          <li>
+            <a herf="https://bywj2853.github.io/coyu-jiaoshi/4.html">fish</a>
+          </li>
+        </ul>
       </div>
-      <!--内容区-->
-      <div style="overflow: auto;" class="flex1 flex neirong">
-        <!--左区-->
-        <div style="flex: 1; height: 1000px;" class="baise">
-          <!--播放器-->
-          <div style="text-align: center;z-index: 1px" class="mgr8">
-            <img src="./图片文件(音乐)/主子.png" width="250" height="250" style="
-        cursor: pointer;" class="zhuzitu" onclick="tangChuang()" />
-            <p>戳下↑ ?</p>
-            <div>
-              <div style="text-align: center">
-                <div id="audioBox">
-                  <audio autoplay="autoplay">
-                    <script type="text/javascript" src="./2.js">
-                      
-                    </script>
-                  </audio>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div style="text-align: center">
-            <a
-              style="color: #ff6699"
-              href="https://bywj2853.github.io/coyu-jiaoshi/"
-              >回主页?</a
-            >
-          </div>
-          <!--歌曲目录-->
-          <div>
-            <h1>歌曲目录表</h1>
-            <p>一:陽だまりのピアチェーレ</p>
-            <p>二:Forest Dance</p>
-            <p>三:いつかの隙間で</p>
-            <p>四:彼方</p>
-            <p>五:Forest Dance</p>
-            <p>六:船の上の錬金術師</p>
-            <p>七:海風を背に受けて</p>
-            <p>八:風穴カーニバル</p>
-            <p>九:海風を背に受けて</p>
-          </div>
+      <div class="content">
+        <div class="left-col">
+          <h1>The<br />REAL<br />SOUND</h1>
         </div>
-        <!--右区-->
-        <div style="flex: 1" class="mgl8 mgr8 baise youqu">
-          <!--小盒子-->
-          <div style="text-align: center">
-            <div style="height: 500px; flex: 1 flex" class="qufeng baise background-1">
-              <img src="./图片文件(音乐)/双人成行.jpg" width="700" height="500">
-            </div>
-            <div style="height: 500px; flex: 1 flex" class="qufeng baise background-2">
-            </div>
-          </div>
+        <div class="right-col">
+          <p>阿知波大輔 - 陽だまりのピアチェーレ</p>
+          <img src="./图片文件(音乐)/play.png" id="icon" />
         </div>
       </div>
     </div>
+    <audio id="mySong">
+      <source
+        src="./阿知波大輔 - 陽だまりのピアチェーレ.mp3"
+        type="audio/mp3"
+      />
+    </audio>
+    <script src="./2 copy.js"></script>
   </body>
 </html>

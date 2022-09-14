@@ -1,34 +1,100 @@
-body {
+* {
+  padding: 0;
   margin: 0;
+}
+body {
   height: 100vh;
   background-color: #eee;
+  background-size: 100%;
 }
+
+/*导航栏*/
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./双人成行.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.navbar {
+  width: 88%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #5f5f5f;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/*文本*/
+.content {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+}
+.left-col {
+  margin-left: 6%;
+}
+.left-col h1 {
+  font-size: 90px;
+  color: #fff;
+  line-height: 110px;
+  float: left;
+}
+.right-col {
+  float: right;
+  margin-right: 6%;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+}
+.right-col p {
+  font-size: 18px;
+  color: #beffff;
+  font-weight: 400;
+  margin-right: 15px;
+}
+
+/*播放器*/
+#icon {
+  width: 80px;
+  cursor: pointer;
+}
+
+/*美化*/
+
 .baise {
   background-color: rgb(255, 255, 255);
 }
-.flex {
-  display: flex;
-}
-.flex1 {
-  flex: 1;
-}
-.column {
-  flex-direction: column;
-}
+
 .mg8 {
   margin: 8px;
 }
+
 .mgr8 {
   margin-right: 8px;
 }
+
 .mgl8 {
   margin-left: 8px;
 }
+
 .mgt8 {
   margin-top: 8px;
-}
-.qufeng {
-  border-bottom: 1px solid rgb(102, 102, 102);
 }
 
 /*媒体查询*/
