@@ -221,6 +221,9 @@ header .image-text .profession {
 }
 /*媒体查询*/
 @media (max-width: 600px) {
+  body {
+    background-image: url(./Almost.webp);
+  }
   a {
     text-decoration: none;
   }
@@ -248,12 +251,6 @@ header .image-text .profession {
   }
 }
 @media (min-width: 600px) {
-  .mgt15 {
-    margin-top: 15px;
-  }
-  .mgb15 {
-    margin-bottom: 15px;
-  }
   .yincang {
     visibility: hidden;
   }

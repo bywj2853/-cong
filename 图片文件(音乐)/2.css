@@ -13,7 +13,7 @@ body {
 .container {
   height: 100vh;
   width: 100%;
-  background-image: url(./双人成行.jpg);
+  background-image: url(./双人成行.webp);
   background-size: cover;
   position: relative;
 }
