@@ -46,6 +46,7 @@ body {
   position: absolute;
   top: 30%;
 }
+
 .left-col {
   margin-left: 6%;
 }
@@ -99,34 +100,41 @@ body {
 
 /*媒体查询*/
 @media (max-width: 600px) {
-  .body {
+  body {
+    width: 100%;
     margin: 8px;
   }
-
-  .neirong {
-    flex-direction: column;
+  .left-col h1 {
+    display: none;
   }
-
-  .zuoqu {
-    height: 250px;
+  .left-col p {
+    font-size: 25px;
+    color: #fff;
   }
-
-  .zhuzitu {
-    width: 150px;
-    height: 150px;
+  .yin {
+    display: none;
   }
-
-  .youqu {
-    flex-direction: column;
-    margin-top: 8px;
+  .yincopy {
+    display: block;
   }
-
-  .background-1 {
-    width: 200px;
-    height: 200px;
+}
+@media (min-width: 600px) {
+  body {
+    margin: 8px;
   }
-
-  .background-2 {
+  .left-col h1 {
+    font-size: 90px;
+    color: #fff;
+    line-height: 110px;
+    float: left;
+  }
+  .left-col p {
+    display: none;
+  }
+  .yin {
+    display: block;
+  }
+  .yincopy {
     display: none;
   }
 }
