@@ -82,7 +82,7 @@ body {
   background-color: #b3efff;
 }
 
-a {
+a :hover {
   text-decoration: none;
 }
 
