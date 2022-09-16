@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>教士的小网站~音乐</title>
+    <!--meta描述-->
+    <meta name="description" content="Author:jiaoshi.Personal Website" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./图片文件(音乐)/style.css" />
+  </head>
+  <body>
+    <div class="music-player">
+      <button id="playlist" aria-label="展开">
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+      <img id="song-image" src="./主子.png" alt="丛雨" />
+      <div class="song-details">
+        <p id="song-name">風穴カーニバル</p>
+        <p id="song-artist">Floating Cloud</p>
+      </div>
+      <div class="player-options">
+        <button id="shuffle" aria-label="随机播放">
+          <i class="fa-solid fa-shuffle"></i>
+        </button>
+        <button id="prev" aria-label="上一首">
+          <i class="fa-solid fa-backward-step"></i>
+        </button>
+        <button id="play" aria-label="播放">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="pause" class="hide" aria-label="暂停">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button id="next" aria-label="下一首">
+          <i class="fa-solid fa-forward-step"></i>
+        </button>
+        <button id="repeat" aria-label="循环">
+          <i class="fa-solid fa-repeat"></i>
+        </button>
+      </div>
+      <audio id="audio" preload="metadata"></audio>
+      <div id="progress-bar">
+        <div id="current-progress"></div>
+      </div>
+      <div class="time-container">
+        <span id="current-time">0:00</span>
+        <span id="max-duration">0:00</span>
+      </div>
+      <div id="playlist-container" class="hide">
+        <button id="close-button" aria-label="close-button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul id="playlist-songs"></ul>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="./图片文件(音乐)/script.js"></script>
+  </body>
+</html>
