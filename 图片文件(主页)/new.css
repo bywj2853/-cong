@@ -4,9 +4,6 @@ img {
   height: 100px;
   -ms-interpolation-mode: bicubic;
 }
-body {
-  background-color: #b3efff;
-}
 a {
   color: black;
   text-decoration: none;
