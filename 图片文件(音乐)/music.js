@@ -26,37 +26,37 @@ let loop = true;
 const songsList = [
   {
     name: "船の上の錬金術師",
-    link: "浅野隼人 - 船の上の錬金術師.mp3",
+    link: "./音频文件/浅野隼人 - 船の上の錬金術師.mp3",
     artist: "浅野隼人",
     image: "./图片文件(音乐)/主子.webp",
   },
   {
     name: "いつもここに君はいて、僕",
-    link: "工藤ともり,山中裕代 - ∮Åmiliauðe E￠oliauðe -いつもここに君はいて、僕.mp3",
+    link: "./音频文件/工藤ともり,山中裕代 - ∮Åmiliauðe E￠oliauðe -いつもここに君はいて、僕.mp3",
     artist: "工藤ともり,山中裕代",
     image: "./图片文件(音乐)/57945242_p0.webp",
   },
   {
     name: "風穴カーニバル",
-    link: "Floating Cloud - 風穴カーニバル.mp3",
+    link: "./音频文件/Floating Cloud - 風穴カーニバル.mp3",
     artist: "Floating Cloud",
     image: "./图片文件(音乐)/70269448_p0.webp",
   },
   {
     name: "陽だまりのピアチェーレ",
-    link: "阿知波大輔 - 陽だまりのピアチェーレ.mp3",
+    link: "./音频文件/阿知波大輔 - 陽だまりのピアチェーレ.mp3",
     artist: "阿知波大輔",
     image: "./图片文件(音乐)/双人成行.webp",
   },
   {
     name: "彼方.mp3",
-    link: "柳川和樹 - 彼方.mp3",
+    link: "./音频文件/柳川和樹 - 彼方.mp3",
     artist: "柳川和樹",
     image: "./图片文件(音乐)/74293644_p0.webp",
   },
   {
     name: "いつかの隙間で.mp3",
-    link: "柳川和樹 - いつかの隙間で.mp3",
+    link: "./音频文件/柳川和樹 - いつかの隙間で.mp3",
     artist: "柳川和樹",
     image: "./图片文件(音乐)/79896856_p1.webp",
   },
