@@ -1,0 +1,19 @@
+/*网页图片自适应*/
+img {
+  width: 100px;
+  height: 100px;
+  -ms-interpolation-mode: bicubic;
+}
+body {
+  background-color: #b3efff;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.text {
+  font-size: 40px;
+}
+.text-image {
+  font-size: 20px;
+}
