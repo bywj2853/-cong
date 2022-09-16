@@ -222,7 +222,9 @@ header .image-text .profession {
 /*媒体查询*/
 @media (max-width: 600px) {
   body {
-    background-image: url(./Almost.webp);
+    background-image: url(./69088998_p0.webp);
+    background-size: 100vh;
+    background-repeat: no-repeat;
   }
   a {
     text-decoration: none;
