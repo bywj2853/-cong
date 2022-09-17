@@ -1,7 +1,18 @@
 body {
-  margin: 0;
-  height: 100%;
-  background-color: #b3efff;
+  /* 加载背景图 */
+  background-image: url(./枫茶主子.jpg);
+  /* 背景图垂直、水平均居中 */
+  background-position: center center;
+  /* 背景图不平铺 */
+  background-repeat: no-repeat;
+  /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+  background-attachment: fixed;
+  /* 让背景图基于容器大小伸缩 */
+  background-size: cover;
+  /* 设置背景颜色，背景图加载过程中会显示背景色 */
+  background-color: #464646;
+  /*背景透明*/
+  opacity: 0.7;
 }
 
 .flex {
@@ -16,6 +27,11 @@ body {
   flex-direction: column;
 }
 
+a span {
+  font-family: Georgia;
+  color: #333;
+}
+
 /*头部栏样式*/
 
 .toubu {
@@ -26,7 +42,7 @@ body {
 .text-image {
   padding: 10px;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
 }
 
 .text {
@@ -38,6 +54,7 @@ body {
 .menu {
   justify-content: center;
   align-items: center;
+  padding: 1em;
 }
 
 /*学习*/
@@ -54,10 +71,14 @@ body {
 
 .title {
   height: 50px;
+  font-size: 1.6em;
+  font-family: MicroSoft YaHei;
 }
 
 .xuexi-text {
   height: 90px;
+  font-size: 1.25em;
+  font-family: MicroSoft YaHei;
 }
 
 /*美化*/
@@ -73,7 +94,7 @@ body {
 .baise {
   background-color: rgb(255, 255, 255);
 }
-
+/*
 .heise {
   background-color: black;
 }
@@ -81,8 +102,9 @@ body {
 .langse {
   background-color: #b3efff;
 }
+*/
 
-a {
+div a {
   text-decoration: none;
 }
 
