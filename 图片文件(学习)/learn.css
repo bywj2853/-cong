@@ -1,6 +1,13 @@
+/*body {
+  margin: 0;
+  height: 100%;
+  background-image: url(./双人成行.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+*/
 body {
   /* 加载背景图 */
-  background-image: url(./枫茶主子.webp);
+  background-image: url(./枫茶主子.jpg);
   /* 背景图垂直、水平均居中 */
   background-position: center center;
   /* 背景图不平铺 */
@@ -29,7 +36,6 @@ body {
 
 a span {
   font-family: Georgia;
-  color: #333;
 }
 
 /*头部栏样式*/
@@ -104,7 +110,7 @@ a span {
 }
 */
 
-div a {
+a {
   text-decoration: none;
 }
 
