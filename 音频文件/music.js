@@ -272,3 +272,57 @@ window.onload = () => {
   //create playlist
   initializePlaylist();
 };
+
+/*预加载音频文件*/
+var queue = new createjs.LoadQueue();
+queue.installPlugin(createjs.Sound);
+queue.loadManifest([
+  {
+    name: "船の上の錬金術師",
+    link: "./音频文件/浅野隼人 - 船の上の錬金術師.mp3",
+    artist: "浅野隼人",
+    image: "./图片文件(音乐)/船の上の錬金術師.jpg",
+  },
+  {
+    name: "いつもここに君はいて、僕",
+    link: "./音频文件/工藤ともり,山中裕代 - ∮Åmiliauðe E￠oliauðe -いつもここに君はいて、僕.mp3",
+    artist: "工藤ともり,山中裕代",
+    image: "./图片文件(音乐)/工藤ともり 山中裕代.jpg",
+  },
+  {
+    name: "風穴カーニバル",
+    link: "./音频文件/Floating Cloud - 風穴カーニバル.mp3",
+    artist: "Floating Cloud",
+    image: "./图片文件(音乐)/風穴カーニバル.jpg",
+  },
+  {
+    name: "陽だまりのピアチェーレ",
+    link: "./音频文件/阿知波大輔 - 陽だまりのピアチェーレ.mp3",
+    artist: "阿知波大輔",
+    image: "./图片文件(音乐)/陽だまりのピアチェーレ.jpg",
+  },
+  {
+    name: "彼方.mp3",
+    link: "./音频文件/柳川和樹 - 彼方.mp3",
+    artist: "柳川和樹",
+    image: "./图片文件(音乐)/彼方.jpg",
+  },
+  {
+    name: "いつかの隙間で.mp3",
+    link: "./音频文件/柳川和樹 - いつかの隙間で.mp3",
+    artist: "柳川和樹",
+    image: "./图片文件(音乐)/いつかの隙間で.jpg",
+  },
+]);
+
+/*事件监听*/
+queue.on("complete", handleComplete, this);
+var yyky = 0;
+var jsd = 0;
+var ddds = 0;
+function handleComplete() {
+  yyky = 1;
+  ddds = 1;
+  console.log("全部音频文件加载完成");
+}
+
