@@ -29,37 +29,38 @@ const songsList = [
     link: "./音频文件/凯尔特/Brendan Power - The Drunken Landlady The Wind tha.mp3",
     artist: "Brendan Power",
     image:
-      "./音频文件/凯尔特/The Drunken Landlady The Wind that Shakes the Barley John Ste.webp",
+      "./图片文件(音乐)/凯尔特封面/The Drunken Landlady The Wind that Shakes the Barley John Ste.webp",
   },
   {
     name: "Galician Carol",
     link: "./音频文件/凯尔特/Carlos Núñez - Galician Carol.mp3",
     artist: "Carlos Núñez ",
-    image: "./音频文件/凯尔特/Galician Carol.webp",
+    image: "./图片文件(音乐)/凯尔特封面/Galician Carol.webp",
   },
   {
     name: "DNA Bourrees",
     link: "./音频文件/凯尔特/Eileen Ivers - DNA Bourrees.mp3",
     artist: "Eileen Ivers",
-    image: "./音频文件/凯尔特/DNA Bourrees.webp",
+    image: "./图片文件(音乐)/凯尔特封面/DNA Bourrees.webp",
   },
   {
     name: "Charlie Mulvihills / The Conspira",
     link: "./音频文件/凯尔特/Joanie Madden - Charlie Mulvihills / The Conspira.mp3",
     artist: "Joanie Madden",
-    image: "./音频文件/凯尔特/Charlie Mulvihills  The Conspira.webp",
+    image: "./图片文件(音乐)/凯尔特封面/Charlie Mulvihills  The Conspira.webp",
   },
   {
     name: "John Brady's / The High Reel / Martin",
     link: "./音频文件/凯尔特/Joanie Madden - John Brady's / The High Reel / Martin.mp3",
     artist: "Joanie Madden",
-    image: "./音频文件/凯尔特/John Brady's  The High Reel  Martin.webp",
+    image:
+      "./图片文件(音乐)/凯尔特封面/John Brady's  The High Reel  Martin.webp",
   },
   {
     name: "Dagdrømmervals",
     link: "./音频文件/凯尔特/Susanne Lundeng - Dagdrømmervals.mp3",
     artist: "Susanne Lundeng",
-    image: "./音频文件/凯尔特/Dagdrømmervals.webp",
+    image: "./图片文件(音乐)/凯尔特封面/Dagdrømmervals.webp",
   },
 ];
 
