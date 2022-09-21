@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=5.0,minimum-scale=1.0"
+    />
+    <title>教士的小网站~音乐</title>
+    <!--meta描述-->
+    <meta name="description" content="Author:jiaoshi.Personal Website" />
+    <!--图标-->
+    <link rel="shortcut icon" href="./图片文件(音乐)/教士_3.ico" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./图片文件(音乐)/music.css" />
+  </head>
+  <body>
+    <div class="flex">
+      <button
+        onclick="window.location.href='https://bywj2853.github.io/coyu-jiaoshi/music-2.html'"
+        type="button"
+      >
+        上一页
+      </button>
+      <button
+        onclick="window.location.href='https://bywj2853.github.io/coyu-jiaoshi/music-1.html'"
+        type="button"
+      >
+        下一页
+      </button>
+    </div>
+    <div class="flex">
+      <button class="left">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button class="right">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+    <div class="music-player">
+      <button id="playlist" aria-label="展开">
+        <i class="fa-solid fa-angle-down"></i>
+      </button>
+      <img
+        id="song-image"
+        src="./音频文件/索菲/阿知波大輔 - 陽だまりのピアチェーレ.mp3"
+        alt="音频封面"
+        aria-label
+      />
+      <div class="song-details">
+        <p id="song-name">陽だまりのピアチェーレ</p>
+        <p id="song-artist">阿知波大輔</p>
+      </div>
+      <div class="player-options">
+        <button id="shuffle" aria-label="随机播放">
+          <i class="fa-solid fa-shuffle"></i>
+        </button>
+        <button id="prev" aria-label="上一首">
+          <i class="fa-solid fa-backward-step"></i>
+        </button>
+        <button id="play" aria-label="播放">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="pause" class="hide" aria-label="暂停">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button id="next" aria-label="下一首">
+          <i class="fa-solid fa-forward-step"></i>
+        </button>
+        <button id="repeat" aria-label="循环">
+          <i class="fa-solid fa-repeat"></i>
+        </button>
+      </div>
+      <audio id="audio" preload="auto">
+        <source
+          src="./音频文件/炼金术士/浅野隼人 - 船の上の錬金術師.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+      <div id="progress-bar">
+        <div id="current-progress"></div>
+      </div>
+      <div class="time-container">
+        <span id="current-time">0:00</span>
+        <span id="max-duration">0:00</span>
+      </div>
+      <div id="playlist-container" class="hide">
+        <button id="close-button" aria-label="close-button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul id="playlist-songs"></ul>
+      </div>
+    </div>
+    <!-- Script -->
+    <script async src="./音频文件/凯尔特/music.js"></script>
+  </body>
+</html>

@@ -7,6 +7,13 @@ body {
   height: 100vh;
   background: linear-gradient(to bottom, #e77aa4 50%, #b3efff 50%);
 }
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .music-player {
   font-size: 16px;
   width: 80vw;
@@ -20,10 +27,13 @@ body {
   border-radius: 0.5em;
   box-shadow: 0.6em 1.2em 3em rgba(0, 0, 0, 0.25);
 }
+
 img {
   width: 100%;
   margin-top: 1.25em;
+  max-height: 18em;
 }
+
 #playlist {
   float: right;
 }
