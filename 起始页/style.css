@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(./img/枫茶主子.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  position: absolute;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 500px;
+  /* border: 1px solid black; */
+}
+
+.shurukuang {
+  position: relative;
+  width: 100%;
+  padding: 5px;
+}
+
+.jishibox {
+  display: none;
+}
+
+.jishibox.active {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jishibox .yaoshi {
+  background: #eee;
+  border-top-right-radius: 10px;
+  padding: 0 10px;
+}
+
+.jishibox a {
+  text-decoration: none;
+  color: black;
+}
+
+.jishibox a:hover {
+  color: #0d6efd;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  min-width: 150px;
+  text-align: center;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: #b3eaff solid 1px;
+  font-size: 25px;
+  backdrop-filter: blur(10px);
+}
+
+input.active {
+  height: 50px;
+  border-bottom: #c8ffd4 solid 1px;
+}
+
+#sousuo {
+  position: absolute;
+  right: 7%;
+  width: 25px;
+  height: 25px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+#sousuo:hover {
+  background-color: white;
+}
+
+#sousuo.active {
+  display: none;
+}
+
+#jishi {
+  position: absolute;
+  right: 14%;
+  width: 25px;
+  height: 25px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+#jishi:hover {
+  background-color: white;
+}
+
+#jishi.active {
+  display: none;
+}
+
+#navgation {
+  position: absolute;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+#navgation:hover {
+  background-color: white;
+}
+
+#navgation.active {
+  display: none;
+}
+
+#qingchu {
+  display: none;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+#qingchu:hover {
+  background-color: white;
+}
+
+#qingchu.active {
+  display: block;
+}
+
+.options-list {
+  width: 100%;
+  background: #f1f1f1;
+  border-radius: 10px;
+  max-height: 180px;
+  overflow-y: auto;
+  margin-top: 3px;
+  padding: 0 30px;
+  height: 0;
+  transition: 0.5s;
+}
+
+.options-list::-webkit-scrollbar {
+  width: 4px;
+  background-color: #eee;
+}
+
+.options-list::-webkit-scrollbar-thumb {
+  background-color: #00a8ff;
+}
+
+.option {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.option a {
+  text-decoration: none;
+  color: #333;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.option a:hover,
+.option.shurukuanged {
+  background: #00a8ff;
+  color: #f1f1f1;
+}
+
+.option a .icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.option a .text {
+  width: 50px;
+  height: 50px;
+}
+
+.options-list.active {
+  height: 180px;
+}
