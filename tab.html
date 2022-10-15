@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- unpkg Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./img/教士.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>枫茶主子起始页</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="shurukuang">
+        <div class="jishibox">
+          <span class="yaoshi">当前要事:</span>
+          <a href="#search" onclick="tosearch()">搜索</a>
+        </div>
+        <input
+          type="text"
+          placeholder="搜索/记事"
+          id="shurukuang"
+          onkeydown="entersearch()"
+        />
+        <button title="搜索" id="sousuo" onclick="search()">
+          <i class="fas fa-search"></i>
+        </button>
+        <button title="记事" id="jishi" onclick="jishi()">
+          <i class="fas fa-pencil-square"></i>
+        </button>
+        <button title="常用链接" id="navgation">
+          <i class="fas fa-angle-down"></i>
+        </button>
+        <button title="清除" id="qingchu" onclick="qing()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="options-list">
+        <div class="option">
+          <a href="https://github.com/bywj2853/coyu-jiaoshi">
+            <span class="icon">
+              <ion-icon name="logo-github"></ion-icon>
+            </span>
+            <span class="text"> GitHub </span>
+          </a>
+        </div>
+        <div class="option">
+          <a href="https://www.runoob.com/">
+            <span class="icon">
+              <img src="./img/菜鸟教程.ico" alt="" />
+            </span>
+            <span class="text"> 菜鸟教程 </span>
+          </a>
+        </div>
+        <div class="option">
+          <a href="https://www.w3school.com.cn/index.html">
+            <span class="icon">
+              <img src="./img/W3c.png" alt="" />
+            </span>
+            <span class="text"> W3c </span>
+          </a>
+        </div>
+        <div class="option">
+          <a href="https://www.runoob.com/">
+            <span class="icon">
+              <img src="./img/MDN.png" alt="" />
+            </span>
+            <span class="text"> MDN </span>
+          </a>
+        </div>
+        <div class="option">
+          <a href="https://www.cnblogs.com/coyu-jiaoshi/">
+            <span class="icon">
+              <img src="./img/博客园.ico" alt="" />
+            </span>
+            <span class="text"> 博客园 </span>
+          </a>
+        </div>
+        <div class="option">
+          <a href="https://juejin.cn/user/4429249284412749">
+            <span class="icon">
+              <img src="./img/juejin.ico" alt="" />
+            </span>
+            <span class="text"> 稀土掘金 </span>
+          </a>
+        </div>
+        <div class="option">
+          <a href="https://bywj2853.github.io/coyu-jiaoshi/">
+            <span class="icon">
+              <img src="./img/教士.ico" alt="" />
+            </span>
+            <span class="text"> 网站主页 </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      let data = window.localStorage.getItem("shi");
+      if (data) {
+        document.getElementById("shurukuang").value = data;
+        jishi();
+      }
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
